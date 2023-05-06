@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="m.png" alt="">
+      <h1>LOVE CALCULATOR</h1>
+      <div class="inputarea">
+        <input type="text" placeholder="Your Name" id="inputone" onfocus="this.value=''"/>
+        <input type="text" placeholder="Love Name" id="inputtwo" onfocus="this.value=''"/>
+      </div>
+      <a href="#" onclick="love()">Calculate</a>
+      <div id="print">relationship result are here</div>
+    </div>
+  </div>
+  <script>
+    function love(){
+        var name1 = document.getElementById("inputone").value;
+        var name2 = document.getElementById("inputtwo").value;
+        if(name1.length <= 2){
+            alert("Enter at least 3 character");
+        }
+        if(name2.length <= 2){
+            alert("Enter at least 3 character");
+        }
+        else{
+            var random = Math.floor(Math.random() * 100);
+            document.getElementById("print").innerHTML = name1 + " and " + name2 + "=" +  random + "%" + "of love";
+        }
+    }
+  </script>
+</body>
+
+</html>

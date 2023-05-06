@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 90vh;
+    width: 50vw;
+    box-shadow: inset -8px -8px 15px red,   
+                inset  8px  8px 15px red;
+                /* the inset function mainly  used to make border inside either in left  or right according to the dimension so thats why i use in both dimesion */
+                border-radius: 25px;
+}
+.content{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+}
+.content h1{
+    padding: 30px;
+    text-align: center;
+    color: maroon;
+    height: 15vh;
+    width: 35vw;
+    box-shadow: inset -2px -2px 15px yellow,   
+                inset  2px  2px 15px orange;
+                text-transform: capitalize;
+}
+.content img{
+    width: 70px;
+    padding: 5px;
+    margin-left: 200px;
+}
+.inputarea{
+    display: flex;
+}
+.inputarea input{
+    width: 250px;
+    height: 30px;
+    text-align: center; 
+    margin: 5px;
+    border: 3px solid red;
+    font-size: 20px;
+    padding: 30px 50px;
+    text-transform: capitalize;
+}
+a{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(161, 55, 55);
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 35px;
+    font-size: 30px;
+    color: white;
+
+}
+#print{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 73, 73);;
+    padding: 30px;
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+}
