@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blue;
+}
+img{
+    width: 10vw;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center
+}
+h1{
+    margin: 30px;
+    font-size: 6rem;
+    text-shadow: 5px 5px pink;
+    color: orange;
+}
+.dice{
+    display: inline-block;
+    margin: 45px;
+    
+}
+p{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    color: brown;
+    margin: 15px;
+    font-size: 2rem;
+    text-shadow: 2px 2px red;
+}
+button{
+    margin: 45px;
+    background-color: darkmagenta;
+    color: wheat;
+    border-radius: 51px;
+    padding: 25px;
+}

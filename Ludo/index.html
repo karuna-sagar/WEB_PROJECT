@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>LUDO GAME</h1>
+      <div class="dice">
+        <p>Player 1</p>
+        <img src="dice1.png" id="check1"/>
+      </div>
+      <div class="dice">
+        <p>Player 2</p>
+        <img src="dice2.png" id="check2" />
+      </div>
+      <div>
+        <button onclick="ludo()">Click Me</button>
+      </div>
+    </div>
+    <script>
+        function ludo(){
+            var random1 = Math.floor(Math.random()*6)+1;
+            var play1 = `dice${random1}.png`;
+            document.getElementById("check1").setAttribute('src',play1);
+            var random2 = Math.floor(Math.random()*6)+1;
+            var play2 = `dice${random2}.png`;
+            document.getElementById("check2").setAttribute('src',play2);
+            if(random1>random2){
+                document.querySelector("h1").innerHTML = "player1 win"
+            }
+            else if(random2>random1){
+                document.querySelector("h1").innerHTML = "player2 win"
+            }
+            else{
+                document.querySelector("h1").innerHTML = "match draw"
+            }
+        }
+       
+    </script>
+  </body>
+</html>
