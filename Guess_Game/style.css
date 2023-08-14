@@ -104,7 +104,7 @@ h1 {
   padding: 2rem 3rem;
   cursor: pointer;
 }
-
+/* it is used for hover button */
 .btn:hover {
   background-color: #ccc;
 }
